@@ -14,6 +14,8 @@ namespace BarinakTakip.Models
         public DbSet<Barinak> Barinak { get; set; }
         public DbSet<Kullanici> Kullanici{ get; set; }
 
+        public DbSet<Hayvan> Hayvan { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder

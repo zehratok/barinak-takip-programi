@@ -12,9 +12,12 @@ namespace BarinakTakip.Models
         [Key]
         public int Id { get; set; }
         public string Ad { get; set; }
-        public string Soyad { get; set; }
-        public string Telefon { get; set; }
-        public string Mail { get; set; }
+        public string Il { get; set; }
+        public string Ilce { get; set; }
         public string Adres { get; set; }
+
+        public int Kapasite { get; set; }
+
+
     }
 }

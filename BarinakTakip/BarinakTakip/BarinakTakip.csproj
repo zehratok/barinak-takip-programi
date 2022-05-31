@@ -169,6 +169,24 @@
     <Compile Include="Form5.Designer.cs">
       <DependentUpon>Form5.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.cs">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7.Designer.cs">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form8.Designer.cs">
+      <DependentUpon>Form8.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\20220530143953_Initial-V1.cs" />
     <Compile Include="Migrations\20220530143953_Initial-V1.designer.cs">
       <DependentUpon>20220530143953_Initial-V1.cs</DependentUpon>
@@ -177,8 +195,33 @@
     <Compile Include="Migrations\20220530145936_Initial-V2.designer.cs">
       <DependentUpon>20220530145936_Initial-V2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20220530183956_Initial-V3.cs" />
+    <Compile Include="Migrations\20220530183956_Initial-V3.designer.cs">
+      <DependentUpon>20220530183956_Initial-V3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20220530184721_Initial-V4.cs" />
+    <Compile Include="Migrations\20220530184721_Initial-V4.designer.cs">
+      <DependentUpon>20220530184721_Initial-V4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20220530184811_Initial-V5.cs" />
+    <Compile Include="Migrations\20220530184811_Initial-V5.designer.cs">
+      <DependentUpon>20220530184811_Initial-V5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20220530192247_Initial-V6.cs" />
+    <Compile Include="Migrations\20220530192247_Initial-V6.designer.cs">
+      <DependentUpon>20220530192247_Initial-V6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20220530194623_Initial-V7.cs" />
+    <Compile Include="Migrations\20220530194623_Initial-V7.designer.cs">
+      <DependentUpon>20220530194623_Initial-V7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20220531164425_Initial-V8.cs" />
+    <Compile Include="Migrations\20220531164425_Initial-V8.designer.cs">
+      <DependentUpon>20220531164425_Initial-V8.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\ApplicationConnectionDbModelSnapshot.cs" />
     <Compile Include="Models\ApplicationConnectionDb.cs" />
+    <Compile Include="Models\Hayvan.cs" />
     <Compile Include="Models\Kullanici.cs" />
     <Compile Include="Models\Barinak.cs" />
     <Compile Include="Program.cs" />
@@ -194,6 +237,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form4.resx">
       <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form7.resx">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form8.resx">
+      <DependentUpon>Form8.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -2,14 +2,16 @@
 using BarinakTakip.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace BarinakTakip.Migrations
 {
     [DbContext(typeof(ApplicationConnectionDb))]
-    partial class ApplicationConnectionDbModelSnapshot : ModelSnapshot
+    [Migration("20220531164425_Initial-V8")]
+    partial class InitialV8
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

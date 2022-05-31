@@ -39,7 +39,7 @@
             this.butonGiris.BackColor = System.Drawing.Color.SeaGreen;
             this.butonGiris.Font = new System.Drawing.Font("Century", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.butonGiris.ForeColor = System.Drawing.Color.LightGoldenrodYellow;
-            this.butonGiris.Location = new System.Drawing.Point(274, 221);
+            this.butonGiris.Location = new System.Drawing.Point(484, 300);
             this.butonGiris.Name = "butonGiris";
             this.butonGiris.Size = new System.Drawing.Size(151, 62);
             this.butonGiris.TabIndex = 8;
@@ -52,7 +52,7 @@
             this.butonKayit.BackColor = System.Drawing.Color.SeaGreen;
             this.butonKayit.Font = new System.Drawing.Font("Century", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.butonKayit.ForeColor = System.Drawing.Color.LightGoldenrodYellow;
-            this.butonKayit.Location = new System.Drawing.Point(101, 221);
+            this.butonKayit.Location = new System.Drawing.Point(292, 300);
             this.butonKayit.Name = "butonKayit";
             this.butonKayit.Size = new System.Drawing.Size(151, 62);
             this.butonKayit.TabIndex = 12;
@@ -66,7 +66,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Elephant", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.LightGoldenrodYellow;
-            this.label6.Location = new System.Drawing.Point(12, 71);
+            this.label6.Location = new System.Drawing.Point(222, 150);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(528, 41);
             this.label6.TabIndex = 13;
@@ -77,7 +77,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(553, 380);
+            this.ClientSize = new System.Drawing.Size(934, 511);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.butonKayit);
             this.Controls.Add(this.butonGiris);

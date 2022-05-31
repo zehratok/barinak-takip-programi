@@ -22,8 +22,6 @@ namespace BarinakTakip
             this.kayittanMiGeldi = kayittanMiGeldi;
         }
 
-        int hak = 3; bool durum = false;
-
         private void GirisEkrani_Load(object sender, EventArgs e)
         {
 
@@ -31,41 +29,46 @@ namespace BarinakTakip
             {
                 MessageBox.Show("Kullanıcı oluşturuldu");
             }
-
+            this.Text = "Giriş Ekranı";
             this.AcceptButton = butonGiris; this.CancelButton = butonIptal;
-            GirisHakki.Text = Convert.ToString(hak);
-            RadioKullanici.Checked = true;
             this.StartPosition = FormStartPosition.CenterScreen;
             this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
         }
 
-        private void butonGiris_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void butonIptal_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void butonGiris_Click_1(object sender, EventArgs e)
         {
-           var Kullanici =  context.Kullanici.Where(k => k.Mail == txtKullaniciAdi.Text && k.Parola == txtParola.Text);
+            if (txtMail.Text == "")
+            {
+                MessageBox.Show("Lütfen e-mail giriniz!");
+                return;
+            }
+            if (txtParola.Text == "")
+            {
+                MessageBox.Show("Lütfen parola giriniz!");
+                return;
+            }
+            var Kullanici =  context.Kullanici.Where(k => k.Mail == txtMail.Text && k.Parola == txtParola.Text);
               if (Kullanici.Count() == 0)
                {
-                MessageBox.Show("HATALI GİRİŞ!", "YANLIŞ KOMBİNASYON!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("HATALI GİRİŞ!", "YANLIŞ E-MAİL - PAROLA KOMBİNASYONU!", MessageBoxButtons.OK, MessageBoxIcon.Error);
               }
             else
                {
-                MessageBox.Show("GİRİŞ BAŞARILI!", "DOĞRU KOMBİNASYON!", MessageBoxButtons.OK);
-                AnaSayfa anaSayfa = new AnaSayfa();
+                MessageBox.Show("GİRİŞ BAŞARILI!", "DOĞRU E-MAİL - PAROLA KOMBİNASYONU!", MessageBoxButtons.OK);
+                AnaSayfa anaSayfa = new AnaSayfa(false);
                 anaSayfa.Show();
                 this.Hide();
             }
         }
 
         private void butonIptal_Click_1(object sender, EventArgs e)
+        {
+            BarinakTakipSistemi barinakTakip = new BarinakTakipSistemi();
+            barinakTakip.Show();
+            this.Hide();
+        }
+
+        private void picGeri_Click(object sender, EventArgs e)
         {
             BarinakTakipSistemi barinakTakip = new BarinakTakipSistemi();
             barinakTakip.Show();

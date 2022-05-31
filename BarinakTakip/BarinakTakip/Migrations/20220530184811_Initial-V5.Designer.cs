@@ -2,14 +2,16 @@
 using BarinakTakip.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace BarinakTakip.Migrations
 {
     [DbContext(typeof(ApplicationConnectionDb))]
-    partial class ApplicationConnectionDbModelSnapshot : ModelSnapshot
+    [Migration("20220530184811_Initial-V5")]
+    partial class InitialV5
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -51,12 +53,6 @@ namespace BarinakTakip.Migrations
                     b.Property<string>("Ad")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
-                    b.Property<int>("BarinakId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Cins")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
-
                     b.Property<string>("Saglik")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
@@ -64,6 +60,9 @@ namespace BarinakTakip.Migrations
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<string>("Yas")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("altTur")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.HasKey("Id");
