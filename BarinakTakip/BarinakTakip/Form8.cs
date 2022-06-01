@@ -101,7 +101,7 @@ namespace BarinakTakip
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Hayvan eklenirken bir hata oluştu.", "HATA");
+                MessageBox.Show("Hayvan eklenirken bir hata oluştu.", "HATA!");
             }
             
         }

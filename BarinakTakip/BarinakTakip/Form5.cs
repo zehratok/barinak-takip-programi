@@ -94,7 +94,7 @@ namespace BarinakTakip
 
             if (gridHayvanListele.SelectedRows.Count == 0)
             {
-                MessageBox.Show("LÜTFEN BİR BARINAK SEÇİN!", "UYARI");
+                MessageBox.Show("LÜTFEN BİR HAYVAN SEÇİN!", "UYARI");
                 return;
             }
             if (gridHayvanListele.SelectedRows.Count != 0)

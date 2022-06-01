@@ -39,12 +39,12 @@ namespace BarinakTakip
         {
             if (txtMail.Text == "")
             {
-                MessageBox.Show("Lütfen e-mail giriniz!");
+                MessageBox.Show("Lütfen e-mail giriniz!", "UYARI!");
                 return;
             }
             if (txtParola.Text == "")
             {
-                MessageBox.Show("Lütfen parola giriniz!");
+                MessageBox.Show("Lütfen parola giriniz!", "UYARI!");
                 return;
             }
             var Kullanici =  context.Kullanici.Where(k => k.Mail == txtMail.Text && k.Parola == txtParola.Text);

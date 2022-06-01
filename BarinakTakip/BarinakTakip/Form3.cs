@@ -41,22 +41,22 @@ namespace BarinakTakip
             {
                 if (txtAd.Text == "")
                 {
-                    MessageBox.Show("Lütfen ad bilgisi giriniz!");
+                    MessageBox.Show("Lütfen ad bilgisi giriniz!", "UYARI!");
                     return;
                 }
                 if (txtSoyad.Text == "")
                 {
-                    MessageBox.Show("Lütfen soyad bilgisi giriniz!");
+                    MessageBox.Show("Lütfen soyad bilgisi giriniz!", "UYARI!");
                     return;
                 }
                 if (txtMail.Text == "")
                 {
-                    MessageBox.Show("Lütfen e-mail bilgisi giriniz!");
+                    MessageBox.Show("Lütfen e-mail bilgisi giriniz!", "UYARI!");
                     return;
                 }
                 if (txtParola.Text == "")
                 {
-                    MessageBox.Show("Lütfen parola bilgisi giriniz!");
+                    MessageBox.Show("Lütfen parola bilgisi giriniz!", "UYARI!");
                     return;
                 }
                 else

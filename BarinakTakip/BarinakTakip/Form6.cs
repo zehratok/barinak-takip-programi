@@ -48,32 +48,32 @@ namespace BarinakTakip
             {
                 if (txtAd.Text == "")
                 {
-                    MessageBox.Show("Lütfen ad bilgisi giriniz!");
+                    MessageBox.Show("Lütfen ad bilgisi giriniz!", "UYARI!");
                     return;
                 }
                 if (txtIl.Text == "")
                 {
-                    MessageBox.Show("Lütfen il bilgisi giriniz!");
+                    MessageBox.Show("Lütfen il bilgisi giriniz!", "UYARI!");
                     return;
                 }
                 if (txtIlce.Text == "")
                 {
-                    MessageBox.Show("Lütfen ilçe bilgisi giriniz!");
+                    MessageBox.Show("Lütfen ilçe bilgisi giriniz!", "UYARI!");
                     return;
                 }
                 if (txtAdres.Text == "")
                 {
-                    MessageBox.Show("Lütfen adres bilgisi giriniz!");
+                    MessageBox.Show("Lütfen adres bilgisi giriniz!", "UYARI!");
                     return;
                 }
                 if (txtKapasite.Text == "")
                 {
-                    MessageBox.Show("Lütfen kapasite bilgisi giriniz!");
+                    MessageBox.Show("Lütfen kapasite bilgisi giriniz!", "UYARI!");
                     return;
                 }
                 if (SayiMi(txtKapasite.Text) == false)
                 {
-                    MessageBox.Show("Lütfen kapasite bilgisini sayı olarak giriniz!");
+                    MessageBox.Show("Lütfen kapasite bilgisini sayı olarak giriniz!", "UYARI!");
                     return;
                 }
                 else
@@ -94,7 +94,7 @@ namespace BarinakTakip
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Barınak eklenirken bir hata oluştu.","HATA");
+                MessageBox.Show("Barınak eklenirken bir hata oluştu.","HATA!");
             }
       
         }
